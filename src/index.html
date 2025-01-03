@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/output.css" />
+
+    <title>Weather app</title>
+
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body class="bg-blue-100 min-h-screen flex items-center justify-center">
+    <!-- card -->
+    <div class="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
+      <h1 class="text-2xl font-bold text-center mb-4">Weather App</h1>
+
+      <!-- city input form -->
+      <form id="weatherForm" class="flex flex-col gap-4">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter city name"
+          class="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-400 bg-gray-100/50"
+        />
+        <button
+          type="submit"
+          class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 mx-auto"
+        >
+          Get Weather
+        </button>
+      </form>
+
+      <!-- weather info output -->
+      <div id="weatherInfo" class="text-center mt-6 hidden">
+        <h2 class="text-lg font-semibold" id="cityName"></h2>
+        <div class="flex items-center gap-2 justify-center mt-2">
+          <div class="size-12">
+            <img
+              src=""
+              alt="icon"
+              id="iconImage"
+              class="bg-orange-300 rounded-full p-2"
+            />
+          </div>
+
+          <p class="text-gray-700 text-4xl font-bold" id="temperature"></p>
+        </div>
+        <p class="text-gray-500 mt-2" id="description"></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- f11184662b86ef1340b2cc2d5631fb4e
+ -->
